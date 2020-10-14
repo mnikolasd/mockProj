@@ -1,0 +1,215 @@
+{
+	"clothing": {
+		"categories": [{
+			"name": "Dresses",
+			"categories": [{
+				"name": "Casual Red Dress",
+				"amount": 16.99,
+				"currency": "EUR",
+				"size": "S",
+				"salary": "",
+				"enabled": false
+			}, {
+				"name": "Short Black Dress",
+				"amount": 47.99,
+				"currency": "EUR",
+				"size": "M",
+				"salary": "",
+				"enabled": true
+			}, {
+				"name": "Long Blue Dinner Dress",
+				"amount": 103.99,
+				"currency": "USD",
+				"size": "L",
+				"salary": "",
+				"enabled": false
+			}]
+		}, {
+			"name": "Tops",
+			"categories": [{
+				"name": "Printed Shirt",
+				"amount": 24.99,
+				"currency": "USD",
+				"size": "M",
+				"salary": "",
+				"enabled": true
+			}, {
+				"name": "Tank Top",
+				"amount": 14.99,
+				"currency": "USD",
+				"size": "S",
+				"salary": "",
+				"enabled": true
+			}]
+		}, {
+			"name": "Pants",
+			"categories": [{
+				"name": "Red Pant",
+				"amount": 32.99,
+				"currency": "USD",
+				"size": "M",
+				"salary": "",
+				"enabled": false
+			}, {
+				"name": "Skinny Jeans",
+				"amount": 44.99,
+				"currency": "USD",
+				"size": "S",
+				"salary": "",
+				"enabled": false
+			}, {
+				"name": "Black Jeans",
+				"amount": 99.99,
+				"currency": "USD",
+				"size": "XS",
+				"salary": "",
+				"enabled": true
+			}, {
+				"name": "Relaxed Fit Jeans",
+				"amount": 56.99,
+				"currency": "USD",
+				"size": "L",
+				"salary": "",
+				"enabled": true
+			}]
+		}, {
+			"name": "Skirts",
+			"categories": [{
+				"name": "Striped Skirt",
+				"amount": 24.99,
+				"currency": "USD",
+				"size": "M",
+				"salary": "",
+				"enabled": true
+			}, {
+				"name": "Black Skirt",
+				"amount": 44.99,
+				"currency": "USD",
+				"size": "S",
+				"salary": "",
+				"enabled": true
+			}]
+		}, {
+			"name": "Shoes",
+			"categories": [{
+				"name": "Pumps",
+				"amount": 89.99,
+				"currency": "USD",
+				"salary": "",
+				"enabled": true
+			}, {
+				"name": "Sport Shoes",
+				"amount": 47.99,
+				"currency": "USD",
+				"salary": "",
+				"enabled": true
+			}, {
+				"name": "Boots",
+				"amount": 103.99,
+				"currency": "USD",
+				"salary": "",
+				"enabled": true
+			}]
+		}, {
+			"name": "Shirts",
+			"categories": [{
+				"name": "Black T-shirt",
+				"amount": 9.99,
+				"currency": "USD",
+				"size": "XL",
+				"salary": "",
+				"enabled": false
+			}, {
+				"name": "Polo T-shirt",
+				"amount": 47.99,
+				"currency": "USD",
+				"size": "M",
+				"salary": "",
+				"enabled": false
+			}, {
+				"name": "White Shirt",
+				"amount": 103.99,
+				"currency": "USD",
+				"size": "L",
+				"salary": "",
+				"enabled": false
+			}]
+		}, {
+			"name": "Pants",
+			"categories": [{
+				"name": "Blue Jeans",
+				"amount": 78.99,
+				"currency": "USD",
+				"size": "M",
+				"salary": "",
+				"enabled": true
+			}, {
+				"name": "Stretch Pant",
+				"amount": 54.99,
+				"currency": "USD",
+				"size": "S",
+				"salary": "",
+				"enabled": true
+			}]
+		}, {
+			"name": "Shorts",
+			"categories": [{
+				"name": "Trouser Short",
+				"amount": 62.99,
+				"currency": "USD",
+				"size": "M",
+				"salary": "",
+				"enabled": true
+			}, {
+				"name": "Slim Short",
+				"amount": 44.99,
+				"currency": "USD",
+				"size": "S",
+				"salary": "",
+				"enabled": false
+			}]
+		}, {
+			"name": "Accessories",
+			"categories": [{
+				"name": "Tie",
+				"amount": 36.99,
+				"currency": "USD",
+				"salary": "",
+				"enabled": false
+			}, {
+				"name": "Wallet",
+				"amount": 47.99,
+				"currency": "USD",
+				"salary": "",
+				"enabled": true
+			}, {
+				"name": "Sunglasses",
+				"amount": 199.99,
+				"currency": "USD",
+				"salary": "",
+				"enabled": true
+			}]
+		}, {
+			"name": "Shoes",
+			"categories": [{
+				"name": "Fashion Sneaker",
+				"amount": 89.99,
+				"currency": "USD",
+				"salary": "",
+				"enabled": false
+			}, {
+				"name": "Sport Shoe",
+				"amount": 47.99,
+				"currency": "USD",
+				"salary": "",
+				"enabled": true
+			}, {
+				"name": "Boots",
+				"amount": 103.99,
+				"currency": "USD",
+				"salary": "",
+				"enabled": true
+			}]
+		}]
+	}
+}

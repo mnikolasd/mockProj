@@ -1,0 +1,34 @@
+{
+    "application": {
+        "id": "",
+        "title": "mp.mockProj.mockProj",
+        "type": "SAP_UI5_Component",
+        "componentUrl": "/",
+        "appUrl": "#mockProj-Display",
+        "navigationComponentName": "mp.mockProj",
+        "intentSemanticObject": "mockProj",
+        "intentAction": "Display",
+        "html5ApplicationName": "mockproj",
+        "HCPParentApplicationName": ""
+    },
+    "assignment": {
+        "groups": [
+            "73a9e5ca-da5d-45d4-8863-fae4bb32b433"
+        ],
+        "contentPackages": [
+            "7b2698da-0450-4984-b007-bee8daa4cccd"
+        ],
+        "categories": []
+    },
+    "tile": {
+        "type": "StaticTile",
+        "title": "MockProj1",
+        "subtitle": "TronIT",
+        "searchKeywords": "MockProj1,TronIT",
+        "displayIconUrl": "sap-icon://approvals",
+        "displayInfoText": "",
+        "size": "1x1",
+        "serviceURL": "",
+        "refreshInterval": ""
+    }
+}
