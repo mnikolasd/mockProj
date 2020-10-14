@@ -3,65 +3,59 @@
 	xmlns:mvc="sap.ui.core.mvc" 
 	xmlns:m="sap.m" 
 	xmlns:l="sap.ui.layout"
-	controllerName="mp.mockProj.controller.Main" 
+	xmlns:form="sap.ui.layout.form"
+	controllerName="mp.mockProj.controller.Main"
+	id="mainView"
 	displayBlock="true">
 	<m:Shell id="shell">
 		<m:App id="app">
 			<m:pages>
 				<m:Page id="page" title="{i18n>title}">
-				<m:content>
-				    <m:HBox width="100%" id="hbox0">
-				        <m:items>
-				            <m:FlexBox width="40%" id="box0">
-				            		<TreeTable id="TreeTableBasic" rows="{path:'/catalog/clothing', parameters: {arrayNames:['categories']}}" width="auto">
-							<extension>
-								<m:OverflowToolbar>
-									<m:Title id="title" text="Clothing"/>
-									<m:ToolbarSpacer/>
-									<m:Button text="Collapse all" press="onCollapseAll"/>
-								</m:OverflowToolbar>
-							</extension>
-							<columns>
-								<Column width="13rem">
-									<m:Label text="Categories"/>
-									<template>
-										<m:Link text="{name}" wrapping="false" press="handleMasterPress"/>
-									</template>
-								</Column>
-							</columns>
-						</TreeTable>
-				            </m:FlexBox>
-				            <m:FlexBox width="100%" id="box1">
-			                	<l:VerticalLayout>
-				                	<l:HorizontalLayout>
-					                	<m:Label text="Name:" class="sapUiSmallMargin"/>
-				                		<m:Input id="name" valueLiveUpdate="true"/>
-				                	</l:HorizontalLayout>
-				                	<l:HorizontalLayout>
-					                	<m:Label text="Amount:" class="sapUiSmallMargin"/>
-				                		<m:Input id="amount" valueLiveUpdate="true"/>
-				                	</l:HorizontalLayout>
-				                	<l:HorizontalLayout>
-					                	<m:Label text="Currency:" class="sapUiSmallMargin"/>
-				                		<m:Input id="currency" valueLiveUpdate="true"/>
-				                	</l:HorizontalLayout>
-				                	<l:HorizontalLayout>
-					                	<m:Label text="Size:" class="sapUiSmallMargin"/>
-				                		<m:Input id="size" valueLiveUpdate="true"/>
-				                	</l:HorizontalLayout>
-				                	<l:HorizontalLayout>
-					                	<m:Label text="Salary:" class="sapUiSmallMargin"/>
-				                		<m:Input id="salaray" valueLiveUpdate="true"/>
-				                	</l:HorizontalLayout>
-				                	<l:HorizontalLayout>
-					                	<m:Label text="Enabled:" class="sapUiSmallMargin"/>
-				                		<m:CheckBox id="enabled" selected="true"/>
-				                	</l:HorizontalLayout>
-			                	</l:VerticalLayout>
-				            </m:FlexBox>
-				        </m:items>
-				    </m:HBox>
-				</m:content>
+					<m:content>
+					    <m:HBox width="100%" id="hbox0">
+					        <m:items>
+					            <m:FlexBox width="40%" id="box0">
+			            			<TreeTable id="TreeTableBasic" rows="{path:'/clothing', parameters: {arrayNames:['categories']}}" width="auto">
+										<extension>
+											<m:OverflowToolbar>
+												<m:Title id="title" text="{i18n>tableTitle}"/>
+												<m:ToolbarSpacer/>
+												<m:Button text="Collapse all" press="onCollapseAll"/>
+											</m:OverflowToolbar>
+										</extension>
+										<columns>
+											<Column width="13rem">
+												<m:Label text="Categories"/>
+												<template>
+													<m:Link id="lookingFor" text="{name}" wrapping="false" press="onLinkPress"/>
+												</template>
+											</Column>
+										</columns>
+									</TreeTable>
+					            </m:FlexBox>
+					            <m:FlexBox width="100%" id="box1">
+				                	<m:Panel id="clothingDetailsPanel" headerText="{i18n>panel4HeaderText}" class="sapUiResponsiveMargin" width="auto">
+										<form:SimpleForm editable="true" layout="ColumnLayout">
+											<m:Label text="{i18n>clothName}"/>
+											<m:Input id="inpName" value="{mockdata>name}" enabled="{mockdata>enabled}"/>
+											<m:Label text="{i18n>clothAmount}"/>
+											<m:Input id="inpAmount" value="{mockdata>amount}" enabled="{mockdata>enabled}"/>
+											<m:Label text="{i18n>clothCurrency}"/>
+											<m:Input id="inpCurrency" value="{mockdata>currency}" enabled="{mockdata>enabled}"/>
+											<m:Label text="{i18n>clothSize}"/>
+											<m:Input id="inpSize" value="{mockdata>size}" enabled="{mockdata>enabled}"/>
+											<m:Label text="{i18n>clothSalary}"/>
+											<m:Input id="sal" value="" enabled="{mockdata>enabled}"/>
+											<m:Label text="{i18n>clothEnabled}"/>
+											<m:CheckBox id="cbEnable" selected="{mockdata>enabled}"/>
+											<m:Button text="Get Salary" press="onApiCall"/>
+											<m:Button text="Nav to App2" press="onNavCall"/>
+										</form:SimpleForm>
+									</m:Panel>
+					            </m:FlexBox>
+					        </m:items>
+					    </m:HBox>
+					</m:content>
 				</m:Page>
 			</m:pages>
 		</m:App>
